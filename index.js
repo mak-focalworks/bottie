@@ -1,6 +1,8 @@
 "use strict";
 
 var fs = require('fs');
+var express = require('express');
+var app = express();
 
 var Train = require('./src/train');
 var Brain = require('./src/brain');
