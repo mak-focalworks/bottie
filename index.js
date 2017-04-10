@@ -11,7 +11,9 @@ var Bottie = {
   Brain: new Brain(),
   Ears: new Ears(process.env.SLACK_TOKEN)
 };
-
+app.get('/',function(req,res){
+  res.end("<h1>It Works</h1>");
+});
 var customPhrasesText;
 var customPhrases;
 try {
